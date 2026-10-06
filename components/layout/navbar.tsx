@@ -19,8 +19,8 @@ export default function NavBar() {
     { href: "/blog", label: "Blog" },
   ];
   return (
-    <div className="flex py-4 border-b">
-      <div className="mx-auto justify-between flex items-center w-full max-w-4xl px-4">
+    <header className="sticky top-0 z-40 h-nav border-b border-border bg-bg/90 backdrop-blur">
+      <div className="mx-auto flex h-full max-w-5xl py-4 items-center justify-between gap-6 px-4">
         <div className="flex items-center space-x-4 gap-4">
           <Link href="/" className="text-base">
             Arthur_
@@ -52,6 +52,6 @@ export default function NavBar() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
