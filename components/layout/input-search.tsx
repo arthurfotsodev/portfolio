@@ -41,7 +41,7 @@ export default function SearchBar() {
       {isVisible && (
         <div
           onClick={() => setIsVisible(false)}
-          className="fixed inset-0 z-50 flex justify-center bg-black/20 backdrop-blur-sm"
+          className="fixed inset-0 z-50 h-screen flex justify-center bg-black/80 backdrop-blur-lg"
         >
           <div
             onClick={(e) => e.stopPropagation()}
