@@ -127,3 +127,7 @@
     @apply font-sans;
   }
 }
+
+.h-first-btn {
+  @apply bg-foreground text-background hover:bg-foreground/90;
+}
