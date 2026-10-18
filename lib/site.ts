@@ -15,22 +15,16 @@ export const site = {
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
     { label: "Blog", href: "/blog" },
+    { label: "Docs", href: "/docs" },
   ],
 };
 
 export const entries = [
   {
-    project: "project1",
-    projectTitle: "Project One",
-    slug: "entry1",
+    project: "bottle",
+    projectTitle: "Bottle",
+    slug: "bottle",
     title: "First Entry",
     version: "v1.0.0",
-  },
-  {
-    project: "project2",
-    projectTitle: "Project Two",
-    slug: "entry2",
-    title: "Second Entry",
-    version: "v1.1.0",
   },
 ];
