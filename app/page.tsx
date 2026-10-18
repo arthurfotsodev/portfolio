@@ -46,10 +46,10 @@ export default function Home() {
           {/* Fenêtre « git log » : les dernières entrées de journal */}
           <div className="border border-border bg-background rounded-lg">
             <div className="flex items-center gap-2 border-b border-border px-4 py-2">
-              <span className="size-2 rounded-full bg-amber-400" />
-              <span className="size-2 rounded-full bg-amber-400" />
-              <span className="size-2 rounded-full bg-amber-400" />
-              <span className="t-meta ml-2">~/journal — git log</span>
+              <span className="size-2 rounded-full bg-amber-400/50" />
+              <span className="size-2 rounded-full bg-amber-400/50" />
+              <span className="size-2 rounded-full bg-amber-400/50" />
+              <span className="ml-2 text-muted-foreground">~/journal — git log</span>
             </div>
             <ul className="divide-y divide-border font-mono text-[13px] leading-[22px]">
               {entries.slice(0, 5).map((e) => (
@@ -58,9 +58,9 @@ export default function Home() {
                     href={`/blog/projects/${e.project}/${e.slug}`}
                     className="flex items-center gap-3 px-4 py-2.5 hover:bg-surface-hover"
                   >
-                    <span className="text-fg-subtle">{e.version}</span>
-                    <span className="truncate text-fg">{e.title}</span>
-                    <span className="ml-auto hidden shrink-0 text-fg-subtle sm:inline">
+                    <span className="text-muted-foreground">{e.version}</span>
+                    <span className="truncate text-foreground">{e.title}</span>
+                    <span className="ml-auto hidden shrink-0 text-muted-foreground sm:inline">
                       {e.projectTitle.toLowerCase()}
                     </span>
                   </Link>
@@ -70,6 +70,9 @@ export default function Home() {
           </div>
         </div>
       </GridSection>
+      {/* <GridSection>
+
+      </GridSection> */}
     </Container>
   );
 }
