@@ -1,0 +1,5 @@
+{
+  "title": "Bottle",
+  "root": true,
+  "pages": ["index", "1-conception", "2-developpement", "3-mise-en-production", "changelog"]
+}
