@@ -11,9 +11,9 @@ export const site = {
     linkedin: "https://linkedin.com/in/exemple",
   },
   nav: [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Projects", href: "/projects" },
+    { label: "Acceuil", href: "/" },
+    { label: "Moi", href: "/about" },
+    { label: "Projets", href: "/projects" },
     { label: "Blog", href: "/blog" },
     { label: "Docs", href: "/docs" },
   ],
